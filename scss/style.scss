@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  margin: 0 auto;
+  width: 1170px;
+  height: 665px;
+  background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgba(102,63,4,1) 78%, rgba(102,63,4,1) 91%);
+  color: white;
+  overflow: hidden;
+  .annotation {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0.3em;
+  }
+  .logo {
+    margin-left: 138px;
+    margin-top: 48px;
+    width: 100px;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: bold;
+    span {
+      color: green;
+    }
+  }
+  .headerWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  &__text {
+    margin-left: 138px;
+    margin-top: 57px;
+    width: 483px;
+    font-family: Vollkorn;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 50px;
+    h1 {
+      font-family: Vollkorn;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 50px;
+    }
+    hr {
+      border: none;
+      height: 10px;
+      background: #dbab00;
+      margin-bottom: 28px;
+    }
+    p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+  &__text-chooseDate {
+    margin-top: 47px;
+    display:block;
+    padding:28px 22px;
+    width: 318px;
+    height: 81px;
+    background: #a70b0b;
+    box-shadow: 0px 0px 15px #dd9e23;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #fff;
+    
+        text-decoration:none;
+  }
+  &__image {
+    position: relative;
+    background-image: url("/Users/venedy/Desktop/testTask/img/Depositphotos_27353059_xl-2015.png");
+    width: 590px;
+    height: 665px;
+    margin-top: -50px;
+  }
+}
+.congratulation {
+  width: 1170px;
+  margin: 23px auto;
+  text-align: center;
+  .congratulationFooter {
+    margin: 30px auto;
+    width: 875px;
+    height: 156px;
+    left: 144px;
+    top: 1481px;
+    border: 11px solid #dbab00;
+    box-sizing: border-box;
+    font-family: Vollkorn;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    color: #a70b0b;
+    padding: 19px 17px;
+  }
+  .crown {
+    margin-top: -200px;
+  }
+  .redDiploma {
+    display: flex;
+    justify-content: space-around;
+    h2{
+        margin-bottom: 20px;
+    }
+    &__text {
+      width: 573px;
+      text-align: left;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 26px;
+      blockquote {
+        margin: 26px 0;
+        width: 570px;
+        height: 119px;
+        background: rgba(242, 214, 116, 0.58);
+        padding: 21px 53px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 26px;
+      }
+    }
+    &__image-download {
+      width: 276px;
+      height: 74px;
+      background: #a70b0b;
+      box-shadow: 0px 0px 15px #dd9e23;
+      color: #fff;
+      a{
+        color:white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.client {
+  width: 1170px;
+  height: 648px;
+  background: #663f04;
+  margin: 37px auto;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  h2{
+    margin-top: 45px;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  hr {
+    display: block;
+    margin: 0 auto;
+    width: 435px;
+    height: 10px;
+    border: none;
+    background-color: #dbab00;
+  }
+  h3 {
+    color: #dbab00;
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  .clientWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__text {
+      width: 420px;
+      height: 97.78px;
+      margin-top: -90px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: left;
+    }
+    &__courier {
+      margin-top: -200px;
+      width: 593px;
+      height: 675px;
+      background-image: url("/Users/venedy/Desktop/testTask/img/Depositphotos_5062302_xl-11 2.2.png");
+    }
+  }
+}
+.delivery {
+  text-align: center;
+  width: 1170px;
+  margin: 0 auto;
+  h1 {
+    margin-top: 50px;
+  }
+  .crown {
+    margin-top: -200px;
+  }
+  .deliveryWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__text {
+      width: 476px;
+      text-align: left;
+      font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 26px;
+    }
+    &__image {
+      svg {
+        position: absolute;
+        right: 250px;
+      }
+    }
+  }
+  .clientFooter {
+    margin: 40px auto;
+    width: 875px;
+    height: 156px;
+    border: 11px solid #dbab00;
+    box-sizing: border-box;
+    font-family: Vollkorn;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    color: #a70b0b;
+    padding: 19px 17px;
+  }
+}
+.instruction {
+  color: #fff;
+  margin: 0 auto;
+  width: 1170px;
+  height: 783px;
+  left: 0px;
+  top: 3087px;
+  background: #663f04;
+  padding-top: 28px;
+  blockquote{
+    padding: 40px;
+    width: 878px;
+    height: 191px;
+    background: #F5E586;
+    border: 11px solid #DBAB00;
+    box-sizing: border-box;
+    margin: 20px auto;
+    font-family: Vollkorn;
+    color: #FF0000;
+font-size: 40px;
+line-height: 45px;
+text-align: center;
+  }
+  h1 {
+    font-family: Vollkorn;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
+  hr {
+    display: block;
+    margin: 0 auto;
+    width: 889px;
+    height: 10px;
+    border: none;
+    background-color: #dbab00;
+  }
+  h2 {
+    font-family: Vollkorn;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+    padding: 20px;
+    width: 918px;
+    margin: 0 auto;
+  }
+  .instructionImage {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .instructionStep {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    li {
+      width: 202px;
+      margin: 20px;
+    }
+  }
+}
+.deliveryForm {
+  width: 878px;
+  height: 696px;
+  background-color: #fff;
+  margin: 70px auto;
+  border: 5px solid #e2c765;
+  padding: 26px 83px;
+  font-size: 18px;
+  h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .radioWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    label{
+      width: 200px;
+      font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 13px;
+    }
+    input{
+      width: 10px;
+    }
+  }
+  .inputWrapper{
+    margin-top: 40px;
+    display:grid;
+    grid-template-columns: 400px  300px;
+    grid-template-rows: 100px ;
+  }
+  .finishCheck{
+    margin-top: 40px;
+    input{
+      margin: 20px;
+    }
+  }
+  .winner{
+      margin: 20px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+  }
+}
+.send {
+  width: 276px;
+  height: 74px;
+  background: #a70b0b;
+  box-shadow: 0px 0px 15px #dd9e23;
+  color: white;
+  margin: 0 50%;
+  transform: translate(-50%);
+}
+.footer {
+  width: 971px;
+  height: 279px;
+  font-family: Vollkorn;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  color: #000000;
+  margin: 39px auto;
+}

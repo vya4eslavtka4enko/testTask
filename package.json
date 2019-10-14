@@ -1,0 +1,17 @@
+{
+  "name": "testtask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "scss":"gulp scss",
+    "watch":"gulp watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
