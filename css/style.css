@@ -8,7 +8,7 @@
   width: 1170px;
   height: 665px;
   background: white;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, #663f04 78%, #663f04 91%);
+  background: radial-gradient(circle, #a1865c 0%, #663f04 78%, #663f04 91%);
   color: white;
   overflow: hidden; }
   .header .annotation {
@@ -30,11 +30,11 @@
       color: green; }
   .header .headerWrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start; }
   .header__text {
     margin-left: 138px;
-    margin-top: 57px;
+    margin-top: 50px;
     width: 483px;
     font-family: Vollkorn;
     font-style: normal;
@@ -75,10 +75,13 @@
     text-decoration: none; }
   .header__image {
     position: relative;
-    background-image: url("/Users/venedy/Desktop/testTask/img/Depositphotos_27353059_xl-2015.png");
+    background-image: url("/Users/Montage/Desktop/testTask/img/Depositphotos_27353059_xl-2015.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 590px;
     height: 665px;
-    margin-top: -50px; }
+    margin-top: -40px;
+    margin-right: 37px; }
 
 .congratulation {
   width: 1170px;
@@ -103,6 +106,14 @@
   .congratulation .redDiploma {
     display: flex;
     justify-content: space-around; }
+    .congratulation .redDiploma .coverImage {
+      display: none;
+      background-image: url("/Users/Montage/Desktop/testTask/img/Frame 5.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 100vh; }
     .congratulation .redDiploma h2 {
       margin-bottom: 20px; }
     .congratulation .redDiploma__text {
@@ -137,7 +148,8 @@
 .client {
   width: 1170px;
   height: 648px;
-  background: #663f04;
+  background: white;
+  background: radial-gradient(circle, #a1865c 0%, #663f04 78%, #663f04 91%);
   margin: 37px auto;
   text-align: center;
   overflow: hidden;
@@ -148,7 +160,7 @@
     font-size: 30px; }
   .client hr {
     display: block;
-    margin: 0 auto;
+    margin: 24px auto;
     width: 435px;
     height: 10px;
     border: none;
@@ -160,11 +172,13 @@
   .client .clientWrapper {
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    margin-top: -50px; }
     .client .clientWrapper__text {
       width: 420px;
       height: 97.78px;
       margin-top: -90px;
+      margin-left: 100px;
       font-family: Roboto;
       font-style: normal;
       font-weight: 500;
@@ -175,7 +189,7 @@
       margin-top: -200px;
       width: 593px;
       height: 675px;
-      background-image: url("/Users/venedy/Desktop/testTask/img/Depositphotos_5062302_xl-11 2.2.png"); }
+      background-image: url("/Users/Montage/Desktop/testTask/img/Depositphotos_5062302_xl-11 2.2.png"); }
 
 .delivery {
   text-align: center;
@@ -187,19 +201,20 @@
     margin-top: -200px; }
   .delivery .deliveryWrapper {
     display: flex;
-    justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    margin-left: 100px; }
     .delivery .deliveryWrapper__text {
       width: 476px;
-      text-align: left;
       font-family: Roboto;
       font-style: normal;
       font-weight: normal;
       font-size: 20px;
-      line-height: 26px; }
+      line-height: 26px;
+      text-align: left; }
     .delivery .deliveryWrapper__image svg {
-      position: absolute;
-      right: 250px; }
+      position: relative;
+      right: 280px;
+      top: -30px; }
   .delivery .clientFooter {
     margin: 40px auto;
     width: 875px;
@@ -261,66 +276,100 @@
   .instruction .instructionStep {
     display: flex;
     justify-content: center;
-    margin-left: 100px; }
+    margin-left: 100px;
+    list-style: decimal; }
     .instruction .instructionStep li {
       width: 202px;
       margin: 20px; }
 
-.deliveryForm {
+form {
   width: 878px;
   height: 696px;
-  background-color: #fff;
-  margin: 70px auto;
-  border: 5px solid #e2c765;
-  padding: 26px 83px;
-  font-size: 18px; }
-  .deliveryForm h2 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 44px;
-    line-height: 46px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000; }
-  .deliveryForm .radioWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px; }
-    .deliveryForm .radioWrapper label {
-      width: 200px;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 10px;
-      line-height: 13px; }
-    .deliveryForm .radioWrapper input {
-      width: 10px; }
-  .deliveryForm .inputWrapper {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 400px  300px;
-    grid-template-rows: 100px; }
-  .deliveryForm .finishCheck {
-    margin-top: 40px; }
-    .deliveryForm .finishCheck input {
-      margin: 20px; }
-  .deliveryForm .winner {
-    margin: 20px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  padding: 10px; }
+
+.wrapp {
+  width: 829px;
+  height: 658px;
+  border: 5px solid #DBAB00;
+  margin: 10px auto;
+  text-align: center; }
+  .wrapp .ok {
+    margin-left: 90px; }
+
+.radioWrap {
+  text-align: left;
+  margin-left: 89px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  width: 650px;
+  padding: 20px; }
+  .radioWrap p {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 23px; }
+  .radioWrap input {
+    margin: 10px;
+    background: #000; }
+
+.deliveryForm {
+  margin-top: 40px; }
+
+.wrappInput {
+  display: grid;
+  grid-template: 130px 2fr/400px 1fr; }
+  .wrappInput input {
+    border: 2px solid #E2C765;
+    box-sizing: border-box; }
+  .wrappInput .day, .wrappInput .phone {
+    width: 273px;
+    height: 47px; }
+  .wrappInput .day {
+    margin-top: 20px;
+    margin-left: 90px; }
+  .wrappInput .phone {
+    margin-left: -10px; }
+  .wrappInput .address {
+    width: 607px;
+    height: 51px;
+    border: 2px solid #E2C765;
+    box-sizing: border-box;
+    margin-left: 110px; }
+
+.footerWrap {
+  text-align: center;
+  padding: 5px;
+  margin: 12px 10px;
+  width: 607px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px; }
 
 .send {
+  display: block;
+  margin: 30px auto;
   width: 276px;
   height: 74px;
   background: #a70b0b;
   box-shadow: 0px 0px 15px #dd9e23;
   color: white;
-  margin: 0 50%;
-  transform: translate(-50%); }
+  text-decoration: none;
+  padding: 24px 74px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF; }
 
 .footer {
   width: 971px;
@@ -331,3 +380,6 @@
   text-align: center;
   color: #000000;
   margin: 39px auto; }
+
+.product {
+  text-align: center; }

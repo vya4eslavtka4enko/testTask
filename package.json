@@ -1,17 +1,26 @@
 {
   "name": "testtask",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "gulp-scss": "^1.4.0"
   },
   "devDependencies": {},
   "scripts": {
-    "scss":"gulp scss",
-    "watch":"gulp watch"
+    "scss": "gulp scss",
+    "watch": "gulp watch"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vya4eslavtka4enko/testTask.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vya4eslavtka4enko/testTask/issues"
+  },
+  "homepage": "https://github.com/vya4eslavtka4enko/testTask#readme",
+  "description": ""
 }
